@@ -1,0 +1,27 @@
+{
+    "name": "TOPMOTIVE",
+    "description": "TOPMOTIVE",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "icons": {
+        "128": "images/dvse_icon.png"
+    },
+    "background": {
+        "scripts": ["js/eventPage.js", "js/popup-sign-in.js", "html/popup_logout.html"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": "images/icon_128.png",
+        "default_popup": "html/popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "http://localhost:3000/",
+        "*://*/*",
+        "https://tm2.carparts-cat.com/*",
+        "contextMenus",
+        "http://www.calpinemate.com/employees/attendanceStatus/*/2"
+    ]
+}
